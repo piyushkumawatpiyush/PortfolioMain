@@ -40,7 +40,7 @@
   font-weight: 500;
   font-style: normal;
   color: #181D43;
-  overflow-x: hidden;
+
   
 }
 
@@ -418,6 +418,16 @@
     border-color: white;
     color: white;
 }
+.assest {
+    background-color: white;
+    border-color: white;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+}
+.assest:hover
+{
+    background-color: white !important;
+}
 
 .visit_button2
 {
@@ -527,6 +537,10 @@
     animation-timeline: view();
     animation-range: entry 0 cover 25%;
 }
+.work-img
+{
+    box-shadow: 0px 12px 25px rgba(0,0,0,0.18);
+}
 @keyframes appear
 {
     from{opacity: 0; scale: .5;}
@@ -610,6 +624,13 @@
             .logo{text-align: center;}
             .skills{padding-left: 10px;
                     padding-right: 10px;}
+
+            .workdone{width: 85vw !important;
+                      text-align: left !important;
+                        margin: 0 !important;}
+
+            .visit{text-align: center !important;
+                    width: 100%  !important;}
         }
 
 
@@ -893,6 +914,46 @@
 
 
 
+<div class="container-fluid about ps-5 pe-5" id="project" style="background-color: #E8ECF4; ">
+    <h2 class="text-center tittle-head mb-5">| MY PROJECTS</h2>
+      <!-- <div class="text-center mx-auto support_text" >
+                Here are some of the games I’ve created — each built with unique ideas, fun mechanics, and polished gameplay.
+                From fast-paced action to creative puzzle designs, every project reflects my passion for game development and
+                experimenting with new concepts.
+        </div> -->
+    <div class="row mx-auto pt-5 workdone" style="width: 75vw; text-align: right;align-items: center;"> 
+        <div class="col-md-6 col-lg-6 col-sm-12">
+            <img src="work1.png" class="img-fluid work-img">
+        </div>
+        
+        <div class="col-md-6 col-lg-6 col-sm-12" >
+           <div>
+             <h3 style="font-weight: 600;" class="mt-5"> AGARBATTI WEBSITE</h3>
+             <p> I delivered a clean and engaging website for Shankarlal Gullumal Agarbatti.
+                        The site is fully responsive with a smooth, minimal navigation and vibrant product display.
+                    I delivered a clean and engaging website for Shankarlal Gullumal Agarbatti.
+                        The site is fully responsive with a smooth, minimal navigation and vibrant product display </p>
+            <div>
+                <button class="assest btn" style="background-color: #28799E;"><i class="fa-brands fa-unity"></i></a> WordPress</button>
+                        <button class="assest btn"style="background-color: #7340F5;"><i class="fa-solid fa-cube"></i> Canva</button>
+                        <button class="assest btn"style="background-color: #54CFF4;"><i class="fa-brands fa-css3-alt"></i> CSS</button>
+                        <button class="assest btn"style="background-color: #0F2D59;"><i class="fa-solid fa-indian-rupee-sign"></i> R-PAY API</button>
+                        <button class="assest btn"style="background-color: #EB493B;"><i class="fa-brands fa-google"></i> GOOGLE API</button>
+                       
+            </div>
+            <a href="https://shankarlalgullumalagarbattis.com/"><button class="btn visit_button2 visit mt-3" style="width: 30%;">Visit Site</button></a>
+           </div>
+        </div>
+     
+
+
+
+
+      
+       
+
+    </div>
+</div>
 
 
 
@@ -903,8 +964,14 @@
 
 
 
-<!-- MY PROJECTES -->
 
+
+
+
+
+
+
+<!-- 
 <div class="container-fluid about ps-5 pe-5" id="project" style="background-color: #e8ffe2;">
     <h2 class="text-center tittle-head mb-5">| MY PROJECTS</h2>
       <div class="text-center mx-auto support_text" >
@@ -913,7 +980,7 @@
                 experimenting with new concepts.</div>
     <div class="row "> 
 
-        <!-- Card 1 -->
+   
         <div class="col-md-4 col-lg-3 col-sm-12 d-flex " >     
             <div class="card text-center mb-3 work-card w-100" style="width: 18rem;">
                 <div class="card-body" style="text-align: left;">
@@ -926,7 +993,7 @@
                         <p><a href="https://shankarlalgullumalagarbattis.com/"><button class="btn visit_button2" style=" width: 60%;">Visit Site</button></a></p>
                        
                     </div>
-                 <!-- <h4 class="card-title">CLIENT ECOMMERCE STORE</h4> -->
+                
                </div>
 
                
@@ -963,7 +1030,7 @@
 
     </div>
 </div>
-
+ -->
 
 
 
@@ -1100,7 +1167,7 @@
   
 
  </div>
-  <div class="p-1 text-center" style="background-color:#181D43; color: white;">
+  <div class="p-2 text-center" style="background-color:#181D43; color: white;">
             build with <i class="fa-solid fa-heart" style="color: white;"></i> by Piyush Kumawat with Html / Css / Bootstrap
   </div>
 </body>
