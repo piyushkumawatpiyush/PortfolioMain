@@ -580,6 +580,14 @@
             box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.18); ;
         }
 
+        .navbar-option
+        {
+            transition: transform .3s ease-in-out;
+        }
+        .navbar-option:hover
+        {
+            transform: translateY(-5px);
+        }
 
         @keyframes appear {
             from {
@@ -738,23 +746,23 @@
 
     <div class="head">
         <div class="">
-            <nav class="navbar navbar-expand-lg navBody">
+            <nav class="navbar navbar-expand-lg navBody fixed-top">
                 <div class="container-fluid">
                     <a href="#" class="navbar-brand">
-                        <img src="logo.png" style="width: 220px; height: auto;;" alt="">
+                        <img src="logo.png" style="width: 220px; height: auto;" alt="sds">
                     </a>
                     <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navOptions">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
                     <div class="navbar-nav collapse navbar-collapse justify-content-end" id="navOptions">
-                        <a href="#" class="nav-link link">HOME</a>
-                        <a href="#about" class="nav-link link">ABOUT</a>
-                        <a href="#services" class="nav-link link">SERVICES</a>
-                        <a href="#project" class="nav-link link">PROJECT</a>
-                        <a href="#more" class="nav-link link">MORE</a>
-                        <a href="#games" class="nav-link link">GAMES</a>
-                        <a href="#contact" class="nav-link link contact-btn">CONTACT</a>
+                        <a href="#" class="nav-link link navbar-option">HOME</a>
+                        <a href="#about" class="nav-link link navbar-option" >ABOUT</a>
+                        <a href="#services" class="nav-link link navbar-option">SERVICES</a>
+                        <a href="#project" class="nav-link link navbar-option">PROJECT</a>
+                        <a href="#more" class="nav-link link navbar-option">MORE</a>
+                        <a href="#games" class="nav-link link navbar-option">GAMES</a>
+                        <a href="#contact" class="nav-link link contact-btn navbar-option">CONTACT</a>
                     </div>
                     <!-- <button class="btn contact_button">CONTACT</button> -->
                 </div>
@@ -765,7 +773,7 @@
         <!--HeaderImage-->
 
         <div class=" container-fluid pt-5">
-            <div class="row  align-items-center">
+            <div class="row  align-items-center" style="padding-top: 70px;">
 
 
                 <div class="col-md-6 col-lg-6 col-sm-12 ">
@@ -855,8 +863,8 @@
 <!-- CARDS -->
 
 <div class=" container-fluid skills " id=" services" style="background-color: #e2f5ff;">
-                                <h2 class="text-center tittle-head mb-5" style="color: ;">| MY SERVICES</h2>
-                                <div class="text-center mx-auto support_text" style="color: ;">
+                                <h2 class="text-center tittle-head mb-5" >| MY SERVICES</h2>
+                                <div class="text-center mx-auto support_text" >
                                     I offer a range of digital services including modern website development,
                                     clean and creative UI/UX design, logo & branding work, and custom web solutions
                                     for businesses and individuals. Whether it's building a complete website, improving
@@ -880,7 +888,7 @@
                                     <!-- Card 2 -->
                                     <div class="col-md-4 col-lg-4 col-sm-6 d-flex justify-content-center">
                                         <div class="card text-center mb-5  skill-card w-100"
-                                            style="width: 18rem;background-color:gold;">
+                                            style="width: 18rem;background-color:#ffe143;">
                                             <div class="card-body">
                                                 <i class="ri-device-line fa-5x bounce_icon"></i>
                                                 <h4 class="card-title">WEBSITE DESIGN</h4>
@@ -906,7 +914,7 @@
                                     <!-- Card 3 -->
                                     <div class="col-md-4 col-lg-4 col-sm-6 d-flex justify-content-center">
                                         <div class="card text-center mb-5  skill-card w-100"
-                                            style="width: 18rem;background-color: palevioletred;">
+                                            style="width: 18rem;background-color: #ff72a0;">
                                             <div class="card-body">
                                                 <i class="ri-puzzle-line fa-5x bounce_icon"></i>
                                                 <h4 class="card-title">GAME UI/UX DESIGN</h4>
@@ -1110,7 +1118,7 @@
                                         <div class="col-md-4 col-sm-4 col-lg-4 col-4">
                                             <div class="posters"
                                                 style="max-width: 250px; height: auto; overflow: hidden; border: 10px solid white;">
-                                                <img src="pos1.png" class="img-fluid" data-bs-toggle="modal"
+                                                <img src="/images/placeholder/pos.webp" class="img-fluid" data-bs-toggle="modal"
                                                     data-bs-target="#img1Modal" style="cursor: pointer;">
                                             </div>
                                         </div>
@@ -1118,7 +1126,7 @@
                                         <div class="col-md-4 col-sm-4 col-lg-4 col-4">
                                             <div class="posters"
                                                 style="max-width: 250px; height: auto; overflow: hidden; border: 10px solid white;">
-                                                <img src="pos2.jpg" class="img-fluid" data-bs-toggle="modal"
+                                                <img src="/images/placeholder/pos2.webp" class="img-fluid" data-bs-toggle="modal"
                                                     data-bs-target="#img2Modal" style="cursor: pointer;">
                                             </div>
                                         </div>
@@ -1126,7 +1134,7 @@
                                         <div class="col-md-4 col-sm-4 col-lg-4 col-4">
                                             <div class="posters"
                                                 style="max-width: 250px; height: auto; overflow: hidden; border: 10px solid white;">
-                                                <img src="pos3.jpg" class="img-fluid" data-bs-toggle="modal"
+                                                <img src="/images/placeholder/pos3.webp" class="img-fluid" data-bs-toggle="modal"
                                                     data-bs-target="#img3Modal" style="cursor: pointer;">
                                             </div>
                                         </div>
@@ -1137,7 +1145,7 @@
                                         <div class="col-md-4 col-sm-4 col-lg-4 col-4">
                                             <div class="posters"
                                                 style="max-width: 250px; height: auto; overflow: hidden; border: 10px solid white;" >
-                                                <img src="pos4.jpg" class="img-fluid" data-bs-toggle="modal"
+                                                <img src="/images/placeholder/pos4.webp" class="img-fluid" data-bs-toggle="modal"
                                                     data-bs-target="#img4Modal" style="cursor: pointer;">
                                             </div>
                                         </div>
@@ -1145,7 +1153,7 @@
                                         <div class="col-md-4 col-sm-4 col-lg-4 col-4">
                                             <div class="posters"
                                                 style="max-width: 250px; height: auto; overflow: hidden; border: 10px solid white;">
-                                                <img src="pos5.jpg" class="img-fluid" data-bs-toggle="modal"
+                                                <img src="/images/placeholder/pos5.webp" class="img-fluid" data-bs-toggle="modal"
                                                     data-bs-target="#img5Modal" style="cursor: pointer;">
                                             </div>
                                         </div>
@@ -1153,7 +1161,7 @@
                                         <div class="col-md-4 col-sm-4 col-lg-4 col-4">
                                             <div class="posters"
                                                 style="max-width: 250px; height: auto; overflow: hidden; border: 10px solid white;">
-                                                <img src="pos6.jpg" class="img-fluid" data-bs-toggle="modal"
+                                                <img src="/images/placeholder/pos6.webp" class="img-fluid" data-bs-toggle="modal"
                                                     data-bs-target="#img6Modal" style="cursor: pointer;">
                                             </div>
                                         </div>
@@ -1219,86 +1227,6 @@
                                 </div>
                             </div>
                         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-                        <!-- 
-<div class="container-fluid about ps-5 pe-5" id="project" style="background-color: #e8ffe2;">
-    <h2 class="text-center tittle-head mb-5">| MY PROJECTS</h2>
-      <div class="text-center mx-auto support_text" >
-                Here are some of the games I’ve created — each built with unique ideas, fun mechanics, and polished gameplay.
-                From fast-paced action to creative puzzle designs, every project reflects my passion for game development and
-                experimenting with new concepts.</div>
-    <div class="row "> 
-
-   
-        <div class="col-md-4 col-lg-3 col-sm-12 d-flex " >     
-            <div class="card text-center mb-3 work-card w-100" style="width: 18rem;">
-                <div class="card-body" style="text-align: left;">
-                   
-                    <div class="other_box2" ">
-                
-                    <img clas="img-fluid"src="work1.png" alt="">
-                    <div class="inner_text text-center">
-                      
-                        <p><a href="https://shankarlalgullumalagarbattis.com/"><button class="btn visit_button2" style=" width: 60%;">Visit Site</button></a></p>
-                       
-                    </div>
-                
-               </div>
-
-               
-                <h4 class="card-title" style="text-align: left; ">NARAYANI COMPUTERS PROJECT</h4>
-                <p style="text-align: left;" >
-                        I delivered a clean and engaging website for Shankarlal Gullumal Agarbatti.
-                        The site is fully responsive with a smooth, minimal navigation and vibrant product display. 
-                    </p>
-                </div>
-            </div>
-        </div>
-
-
-
-         <div class="col-md-4 col-lg-3 col-sm-12 d-flex " >     
-            <div class="card text-center mb-3 work-cardh w-100" style="width: 10rem; background-color: #F1F5F6; ">
-                  <img src="work2.png" class="card-img-top p-4" alt="..." style=" filter: blur(4px);">
-                <div class="card-body"  >
-                   
-                 
-                   
-                    <p>Currently In Progress</p>
-                </div>
-            </div>
-        </div>
-
-        
-
-
-
-
-      
-       
-
-    </div>
-</div>
- -->
-
-
-
-
-
-
-
-
 
 
 
@@ -1394,27 +1322,27 @@
 
                         <!-- CONTACT ME -->
 
-                        <div class="container-fluid pt-5 mt-5" id="contact" style="background-color: #e7fff5;">
+                        <div class="container-fluid pt-5 mt-5" id="contact" >
                             <h1 class="text-center tittle-head" style="margin-bottom: 70px;">| LET'S WORK TOGETHER</h1>
                             <div class="text-center mx-auto support_text"
                                 style="margin-bottom: 0px; padding-bottom: 100px;">
                                 I’M ALWAYS OPEN TO NEW OPPORTUNITIES AND EXCITING PROJECTS.
                                 LET’S CONNECT AND BRING YOUR IDEAS TO LIFE WITH IMPACTFUL, CREATIVE, AND PROFESSIONAL
-                                EXECUTION. <br /><br /><br /><br /><br />
+                                EXECUTION. <br /><br /><br />
 
 
                                 <a href="https://www.instagram.com/piyushkumawat9982/?igsh=bHFrdHdvaW93eWs%3D#"><button
-                                        class="btn visit_button2 mt-4 me-4 "><i class="fa-brands fa-instagram"></i>
+                                        class="btn visit_button2  me-4 "><i class="fa-brands fa-instagram"></i>
                                         Instagram</button></a>
                                 <a href="https://www.facebook.com/share/17awmKytsX/"><button
-                                        class="btn visit_button2 mt-4 me-4"><i class="fa-brands fa-facebook"></i>
+                                        class="btn visit_button2 me-4"><i class="fa-brands fa-facebook"></i>
                                         Facebook</button></a>
                                 <a href="https://wa.me/918619144326?text=Hello%20Piyush!"><button
-                                        class="btn visit_button2 mt-4 me-4"><i class="fa-brands fa-whatsapp"></i>
+                                        class="btn visit_button2 me-4"><i class="fa-brands fa-whatsapp"></i>
                                         Whatsapp</button></a>
 
                                 <br /><br />
-                                <div class="container-fluid mt-5 " style="background-color: #e7fff5;">
+                                <div class="container-fluid mt-5 " >
                                     <div class="row">
                                         <div class="col-4 col-md-4 col-sm-3 mb-4">
                                             <a href="mailto:piyushkumawat9982gmail@gmail.com"
