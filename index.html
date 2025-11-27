@@ -737,6 +737,7 @@
             .work-text {
                 text-align: left !important;
             }
+            .link{padding: 7px; margin-top: 5px;}
         }
     </style>
 </head>
@@ -753,19 +754,19 @@
                     <a href="#" class="navbar-brand">
                         <img src="LOGO.png" style="width: 220px; height: auto;" alt="sds">
                     </a>
-                    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navOptions">
+                    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navOptions" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
                     <div class="navbar-nav collapse navbar-collapse justify-content-end" id="navOptions">
-                        <a href="#" class="nav-link link navbar-option">HOME</a>
-                        <a href="#about" class="nav-link link navbar-option" >ABOUT</a>
-                        <a href="#services" class="nav-link link navbar-option">SERVICES</a>
-                        <a href="#more" class="nav-link link navbar-option">MORE</a>
-                        <a href="#project" class="nav-link link navbar-option">PROJECT</a>
+                        <a href="#" class="nav-link link navbar-option js-scroll-trigger">HOME</a>
+                        <a href="#about" class="nav-link link navbar-option js-scroll-trigger" >ABOUT</a>
+                        <a href="#services" class="nav-link link navbar-option js-scroll-trigger">SERVICES</a>
+                        <a href="#more" class="nav-link link navbar-option js-scroll-trigger">MORE</a>
+                        <a href="#project" class="nav-link link navbar-option js-scroll-trigger">PROJECT</a>
                         
-                        <a href="#games" class="nav-link link navbar-option">GAMES</a>
-                        <a href="#contact" class="nav-link link contact-btn navbar-option">CONTACT</a>
+                        <a href="#games" class="nav-link link navbar-option js-scroll-trigger">GAMES</a>
+                        <a href="#contact" class="nav-link link contact-btn navbar-option js-scroll-trigger">CONTACT</a>
                     </div>
                     <!-- <button class="btn contact_button">CONTACT</button> -->
                 </div>
@@ -1012,7 +1013,7 @@
                                 <div class="text-center mx-auto mb-3 extracard other_card"
                                     style="background-color: #e1feff; max-width: 400px;border-radius: 20px; padding: 40px 50px 40px 50px;">
                                     <i class="fa-solid fa-dumbbell fa-3x" style="color: #43e2fe;"></i><br/>
-                                    <label class="mb-3" style="font-weight: 600;">HOBBY</label><br />
+                                    <label class="mb-3" style="font-weight: 600;">HOBBIES</label><br />
                                     <label style="">1.I enjoy calisthenics and staying fit<br />
                                         2.I like reading books<br />
                                     </label>
@@ -1379,6 +1380,11 @@
                             build with <i class="fa-solid fa-heart" style="color: white;"></i> by Piyush Kumawat with
                             Html / Css / Bootstrap
                         </div>
+                        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> <script type="text/javascript">
+
+                            $('.js-scroll-trigger').click(function () { $('.navbar-collapse').collapse('hide');
+                             });
+</script>
 </body>
 
 </html>
